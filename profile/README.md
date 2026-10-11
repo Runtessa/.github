@@ -1,7 +1,5 @@
 <div align="center">
 
-![Runtessa — Signal](https://github.com/Runtessa/.github-private/blob/main/profile/signal.png?raw=true)
-
 # Runtessa
 
 ### Build the application. Keep the platform running.
