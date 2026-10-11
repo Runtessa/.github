@@ -6,7 +6,7 @@
 
 **An open-source application platform for live backend code, executable data models and React interfaces.**
 
-[Explore the platform](https://github.com/Runtessa/platform) · [Build your first application](https://github.com/Runtessa/platform/blob/main/docs/tutorials/first-application.md) · [Architecture](https://github.com/Runtessa/platform/blob/main/docs/architecture/dependency-graph.md) · [Contribute](https://github.com/Runtessa/platform/blob/main/CONTRIBUTING.md)
+[Website & docs](https://runtessa.github.io/platform/) · [Explore the platform](https://github.com/Runtessa/platform) · [Build your first application](https://github.com/Runtessa/platform/blob/main/docs/tutorials/first-application.md) · [Architecture](https://github.com/Runtessa/platform/blob/main/docs/architecture/dependency-graph.md) · [Contribute](https://github.com/Runtessa/platform/blob/main/CONTRIBUTING.md)
 
 </div>
 
@@ -165,8 +165,8 @@ findings through the [security policy](https://github.com/Runtessa/platform/blob
 
 ## Project status and license
 
-**Developer preview.** The repositories are private while the open-source release
-is prepared. Validation records document exercised paths and remaining dependency,
+**Open-source developer preview.** The platform and its nine component repositories
+are public. Validation records document exercised paths and remaining dependency,
 operational and conformance work. Production load guarantees and unrestricted
 public execution of untrusted code are outside the current release claims.
 
