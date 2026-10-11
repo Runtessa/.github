@@ -41,26 +41,12 @@ application platform to build on; those products are not prebuilt applications.
 5. **Iterate:** inspect differences and revision history, restore source to a
    draft when needed, then review and publish the next revision.
 
-This sequence shows the backend publication and request path:
+The two paths have explicit responsibilities:
 
-```mermaid
-sequenceDiagram
-    participant Dev as Developer
-    participant Studio as Studio / IDE server
-    participant Store as Core database
-    participant Client as Application client
-    participant Runtime as Core runtime
-    participant Process as Restricted process
-    Dev->>Studio: Edit and save a backend draft
-    Studio->>Store: Store source and revisions
-    Dev->>Studio: Review and publish
-    Studio->>Store: Select published module snapshot
-    Client->>Runtime: Application HTTP request
-    Runtime->>Store: Resolve tenant, ACL and published code
-    Runtime->>Process: Execute with granted capabilities
-    Process-->>Runtime: Handler result
-    Runtime-->>Client: Application response
-```
+| Path | Flow | What happens |
+| --- | --- | --- |
+| Application publication | Developer → Studio → Core database | Studio persists drafts and revisions, then selects the reviewed published module snapshot. |
+| Backend request | Application client → Core → restricted process → Core → client | Core resolves the tenant, ACL and selected code, grants execution capabilities, and returns the handler result. |
 
 Core and Studio host their execution processes inside their existing services.
 Kernel runs in the application browser. The
